@@ -1,0 +1,16 @@
+<h2>Tasks</h2>
+<div class="tasks">
+    <div *ngFor="let task of tasks; let i = index" class="task">
+      <span>Task: {{ task.Task }}</span>
+      <span *ngIf="task.Status=='Pending'" class="status" style="color: rgb(159, 159, 5);">Status: {{ task.Status }}</span>
+      <span *ngIf="task.Status!='Pending'" class="status" style="color: green;">Status: {{ task.Status }}</span>
+      <span class="created">Created: {{ task.Created }}</span>
+      <span class="deadline">Deadline: {{ task.Deadline }}</span>
+
+      <div class="buttons">
+        <button (click)="removeTask(i)" style="background-color: red;color:white">Delete</button>
+        <button *ngIf="task.Status == 'Pending'" (click)="changeStatus(i)">Complete</button>
+        <button *ngIf="task.Status == 'Completed'" (click)="changeStatus(i)">Pending</button>
+      </div>
+    </div>
+</div>

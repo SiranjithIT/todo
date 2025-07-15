@@ -1,0 +1,24 @@
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.flex-item{
+  border: 1px solid rgb(183, 183, 183);
+}
+
+.flex-item:first-child{
+  flex: 1;
+}
+
+.flex-item:last-child{
+  flex: 4;
+}
+
+@media(max-width: 768px){
+  .flex-container{
+    flex-direction: column;
+  }
+}

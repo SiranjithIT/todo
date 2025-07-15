@@ -1,0 +1,45 @@
+h2{
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+  color: #444;
+  background-color: #f0f0f0;
+
+}
+
+.tasks{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 20px;
+  gap: 10px;
+}
+
+.task{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 6px;
+  border: 1px solid rgb(163, 163, 163);
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 22%;
+}
+
+.buttons{
+  display: flex;
+  gap: 5px;
+}
+
+.buttons button{
+  cursor: pointer;
+}
+
+.buttons button:hover{
+  translate: 0 -3px;
+}
+
+
+

@@ -1,0 +1,15 @@
+<h2>Add Task</h2>
+
+<div class="flex-container">
+  <div class="task-entry">
+    <label for="task-name">Task Name</label>
+    <input type="text" [(ngModel)]="newTask">
+  </div>
+
+  <div class="task-entry">
+    <label for="Deadline">Task Deadline</label>
+    <input type="date" [(ngModel)]="taskDeadline">
+  </div>
+
+  <button (click)="addToList()">Submit</button>
+</div>
